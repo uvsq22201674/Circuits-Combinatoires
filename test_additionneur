@@ -1,0 +1,149 @@
+input a :
+
+Gate SWITCH 0
+{
+	position = (100, 100)
+}
+
+Gate SWITCH 1
+{
+	position = (250, 100)
+}
+
+Gate SWITCH 2
+{
+	position = (400, 100)
+}
+
+Gate SWITCH 3
+{
+	position = (550, 100)
+}
+
+input b :
+
+Gate SWITCH 4
+{
+	position = (100, 200)
+}
+
+Gate SWITCH 5
+{
+	position = (250, 200)
+}
+
+Gate SWITCH 6
+{
+	position = (400, 200)
+}
+
+Gate SWITCH 7
+{
+	position = (550, 200)
+}
+
+additionneur 1 bit 1:
+
+Gate XOR 12
+{
+	input_a = 3
+	input_b = 7
+	position = (0, 600)
+}
+Gate XOR 13
+{
+	input_a = 12
+	position = (0, 700)
+}
+
+Gate AND 14
+{
+	input_a = 3
+	input_b = 7
+	position = (300, 600)
+}
+Gate XOR 15
+{
+	input_a = 3
+	input_b = 7
+	position = (200, 600)
+}
+Gate AND 16
+{
+	input_b = 15
+	position = (150, 700)
+}
+
+Gate OR 17
+{
+	input_a = 14
+	input_b = 16
+	position = (150, 800)
+}
+
+additionneur 1 bit 2:
+
+Gate XOR 18
+{
+	input_a = 2
+	input_b = 6
+	position = (500, 600)
+}
+Gate XOR 19
+{
+	input_a = 18
+	input_b = 17
+	position = (500, 700)
+}
+
+Gate AND 20
+{
+	input_a = 2
+	input_b = 6
+	position = (800, 600)
+}
+Gate XOR 21
+{
+	input_a = 2
+	input_b = 6
+	position = (700, 600)
+}
+Gate AND 22
+{
+	input_a = 17
+	input_b = 21
+	position = (650, 700)
+}
+
+Gate OR 23
+{
+	input_a = 20
+	input_b = 22
+	position = (650, 800)
+}
+
+
+output :
+
+Gate OUTPUT 8
+{
+	position = (100, 300)
+}
+
+Gate OUTPUT 9
+{
+	input_a = 23
+	position = (250, 300)
+}
+
+Gate OUTPUT 10
+{
+	input_a = 19
+	position = (400, 300)
+}
+
+Gate OUTPUT 11
+{
+	input_a = 13
+	position = (550, 300)
+}

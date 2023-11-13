@@ -1,0 +1,27 @@
+Gate SWITCH 0
+{
+	position = (100, 100)
+}
+
+Ceci est un commentaire sans importance...
+
+Gate SWITCH 1
+{
+	position = (100, 300)
+}
+Gate AND 2
+{
+	input_a = 0
+	input_b = 1
+	position = (200, 200)
+}
+Gate OUTPUT 3
+{
+	input_a = 2
+	
+	position = (300, 200)
+}
+Label TEST 0
+{
+	position = (0, 0)
+}
