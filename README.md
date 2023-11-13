@@ -25,3 +25,5 @@ Bouger porte : Flèches
 
 Menu contextuel : Clique droit
 
+
+Connecter portes : Selectionner la porte fournissant l'entrée, maintenez Controle et selectionnez la porte voulue
